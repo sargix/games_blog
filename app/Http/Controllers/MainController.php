@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
     public function index()
     {
-        return view('blog.list');
+        $games = DB::table('games')->get();
+
+        return view('blog.list', ['games' => $games]);
     }
 
     public function create()
