@@ -9,12 +9,13 @@
     @include('additives.styles')
 </head>
 <body>
-    @include('elements.navbar')
+        @include('elements.navbar')
 
-    <div class="container">
-        @yield('content')
-    </div>
-    
+        <div class="container">
+            @yield('content')
+        </div>
+        
+        <div class="container pt-5"></div>
 
     @include('elements.footer')
 

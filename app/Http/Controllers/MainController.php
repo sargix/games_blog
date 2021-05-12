@@ -25,9 +25,11 @@ class MainController extends Controller
         //
     }
 
-    public function show($id)
+    public function show(int $gameId)
     {
-        //
+        $game = DB::table('games')->where('id', $gameId)->get();
+
+        return view('blog.show', ['game' => $game]);
     }
 
     public function edit($id)
