@@ -23,4 +23,6 @@ Route::post('added', 'MainController@create')->name('game.add');
 
 Route::get('bestGames', 'MainController@bestGames')->name('games.bestList');
 
-Route::get('search', fn () => view('blog.search'))->name('game.search');
+Route::get('search', fn () => view('blog.search'))->name('game.search.form');
+
+Route::post('searched', 'MainController@search')->name('game.search');

@@ -12,7 +12,7 @@
           <a class="nav-link" href="{{ route('game.add.form') }}">Dodaj grę</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('game.search') }}">Wyszukaj grę</a>
+          <a class="nav-link" href="{{ route('game.search.form') }}">Wyszukaj grę</a>
         </li>    
       </ul>
     </div>  

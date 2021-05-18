@@ -50,6 +50,14 @@ class MainController extends Controller
         return view('blog.show', ['game' => $game]);
     }
 
+    public function search(Request $request)
+    {
+        $searchGames = DB::table('games')->where('title', 'like', $request->input('search') . '%')->get();
+
+        $countResults = DB::table('games')->where('title', 'like', $request->input('search') . '%')->count();
+        return view('blog.search', ['searchGames' => $searchGames ?? [], 'countResults' => $countResults]);
+    }
+
     public function edit($id)
     {
         //
