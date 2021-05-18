@@ -10010,3 +10010,13 @@ i.fa-globe-americas {
     font-size: 25px;
 }
 
+form {
+    position: relative;
+}
+
+button.btn.btn-primary {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
