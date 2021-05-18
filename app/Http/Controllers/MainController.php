@@ -42,7 +42,7 @@ class MainController extends Controller
 
         $request->session()->flash('message', 'Dodano nową grę');
 
-        return redirect('/');
+        return redirect()->route('games.list');
     }
 
     public function show(int $gameId)
@@ -65,7 +65,12 @@ class MainController extends Controller
     {
     }
 
-    public function destroy($id)
+    public function destroy(Request $request, int $id)
     {
+        DB::table('games')->where('id', $id)->delete();
+
+        $request->session()->flash('message', 'Usunięto grę');
+
+        return redirect()->route('games.list');
     }
 }
