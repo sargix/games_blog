@@ -23,7 +23,17 @@
     </div>
     <div class="form-group form-check">
         <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="ps3" value="PS3"> PS3
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
           <input class="form-check-input" type="checkbox" name="ps4" value="PS4"> PS4
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="ps5" value="PS5"> PS5
         </label>
     </div>
     <div class="form-group form-check">
@@ -33,7 +43,17 @@
     </div>
     <div class="form-group form-check">
         <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="x360" value="X360"> X360
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
           <input class="form-check-input" type="checkbox" name="xone" value="XONE"> XONE
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="xsx/s" value="XSX/S"> XSX/S
         </label>
     </div>
     <div class="form-group">

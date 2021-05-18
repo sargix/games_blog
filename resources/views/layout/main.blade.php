@@ -19,9 +19,8 @@
         <div class="container pt-5"></div>
 
     </div>
+    
     @include('elements.footer')
-
-
 
     @include('additives.scripts')
 </body>
