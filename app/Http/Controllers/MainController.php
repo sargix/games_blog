@@ -14,15 +14,27 @@ class MainController extends Controller
         return view('blog.list', ['games' => $games]);
     }
 
-    public function create()
+    public function bestGames()
     {
-        //
+        $games = DB::table('games')->get();
+
+        return view('blog.bestGames', ['games' => $games]);
     }
 
-
-    public function store(Request $request)
+    public function create(Request $request)
     {
-        //
+        $createdGame = [
+            'title' => $request->input('title'),
+            'genre' => $request->input('genre'),
+            'publisher' => $request->input('publisher'),
+            'publicate_date' => $request->input('date'),
+            'platform' => $request->input('platform'),
+            'description' => $request->input('description'),
+        ];
+
+        DB::table('games')->insertOrIgnore($createdGame);
+
+        return $this->index();
     }
 
     public function show(int $gameId)
@@ -33,11 +45,6 @@ class MainController extends Controller
     }
 
     public function edit($id)
-    {
-        //
-    }
-
-    public function update(Request $request, $id)
     {
         //
     }
