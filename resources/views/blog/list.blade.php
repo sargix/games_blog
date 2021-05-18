@@ -2,7 +2,13 @@
 
 @section('content')
 <div class="container pt-3"></div>
-    <h1>Lista gier</h1>
+@if (!empty($message))
+<div class="alert alert-primary">
+    {{ $message }}
+  </div>
+@endif
+<div class="container pt-3"></div>
+<h1>Lista gier</h1>
     @foreach ($games as $game)
     <div class="container pt-3"></div>
         <div class="row">

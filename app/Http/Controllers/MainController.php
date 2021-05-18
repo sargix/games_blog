@@ -7,11 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $games = DB::table('games')->get();
 
-        return view('blog.list', ['games' => $games]);
+        return view('blog.list', ['games' => $games, 'message' => $request->session()->get('message')]);
     }
 
     public function bestGames()
@@ -40,7 +40,9 @@ class MainController extends Controller
 
         DB::table('games')->insertOrIgnore($createdGame);
 
-        return $this->index();
+        $request->session()->flash('message', 'Dodano nową grę');
+
+        return redirect('/');
     }
 
     public function show(int $gameId)
@@ -55,16 +57,15 @@ class MainController extends Controller
         $searchGames = DB::table('games')->where('title', 'like', $request->input('search') . '%')->get();
 
         $countResults = DB::table('games')->where('title', 'like', $request->input('search') . '%')->count();
+
         return view('blog.search', ['searchGames' => $searchGames ?? [], 'countResults' => $countResults]);
     }
 
     public function edit($id)
     {
-        //
     }
 
     public function destroy($id)
     {
-        //
     }
 }

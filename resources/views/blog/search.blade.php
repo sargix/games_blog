@@ -18,7 +18,9 @@
     <div class="container pt-3"></div>
 
     @if (!empty($searchGames))
-        <h3>Znaleziono wyników: {{ $countResults }}</h3>
+    <div class="alert alert-primary">
+        Znaleziono wyników: {{ $countResults }}
+      </div>
         @foreach ($searchGames as $game)
         <div class="container pt-3"></div>
             <div class="row">
