@@ -10002,6 +10002,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.wrap-page {
+    min-height: 100vh;
+}
+
 i.fa-globe-americas {
     font-size: 25px;
 }

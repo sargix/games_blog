@@ -23,17 +23,17 @@
     </div>
     <div class="form-group form-check">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="platform" value="PS4"> PS4
+          <input class="form-check-input" type="checkbox" name="ps4" value="PS4"> PS4
         </label>
     </div>
     <div class="form-group form-check">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="platform" value="PC"> PC
+          <input class="form-check-input" type="checkbox" name="pc" value="PC"> PC
         </label>
     </div>
     <div class="form-group form-check">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="platform" value="XONE"> XONE
+          <input class="form-check-input" type="checkbox" name="xone" value="XONE"> XONE
         </label>
     </div>
     <div class="form-group">

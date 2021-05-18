@@ -28,7 +28,7 @@ class MainController extends Controller
             'genre' => $request->input('genre'),
             'publisher' => $request->input('publisher'),
             'publicate_date' => $request->input('date'),
-            'platform' => $request->input('platform'),
+            'platform' => $request->input('ps4') . ', ' . $request->input('pc') . ', ' . $request->input('xone'),
             'description' => $request->input('description'),
         ];
 
