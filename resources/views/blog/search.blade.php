@@ -34,7 +34,7 @@
                             <h5 class="card-title">Platformy: {{ $game->platform }}</h5>
                             <h5 class="card-title">Data wydania: {{ $game->publicate_date }}</h5>
                             <p class="card-text">Opis: {{ $game->description }}</p>
-                            <a href="#" class="card-link">Edytuj</a>
+                            <a href="{{ route('game.add.form', $game->id) }}" class="card-link">Edytuj</a>
                             <a href="{{ route('game.show', $game->id) }}" class="card-link">Zobacz</a>
                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal{{ $game->id }}">
                                 Usuń 
