@@ -28,3 +28,7 @@ Route::get('search', fn () => view('blog.search'))->name('game.search.form');
 Route::post('searched', 'MainController@search')->name('game.search');
 
 Route::get('delete/{id}', 'MainController@destroy')->name('game.delete');
+
+Route::get('edit/{id}', fn ($id) => view('blog.edit', ['id' => $id]))->name('game.edit.form');
+
+Route::post('edit/{id}', 'MainController@edit')->name('game.edit');

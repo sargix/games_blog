@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'cfb30c82585a0a5b19f1ee3d898aab36e188f046',
+    'reference' => '35b2c9e625780f558a870603cf4d01ac41eb23e6',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -53,6 +53,15 @@ private static $installed = array (
       ),
       'reference' => 'dff976c2f3487d42c1db75a3b180e2b9f0e72ce0',
     ),
+    'composer/package-versions-deprecated' => 
+    array (
+      'pretty_version' => '1.11.99.1',
+      'version' => '1.11.99.1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7413f0b55a051e89485c5cb9f765fe24bb02a7b6',
+    ),
     'cordoval/hamcrest-php' => 
     array (
       'replaced' => 
@@ -66,6 +75,42 @@ private static $installed = array (
       array (
         0 => '*',
       ),
+    ),
+    'doctrine/cache' => 
+    array (
+      'pretty_version' => '1.11.1',
+      'version' => '1.11.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '163074496dc7c3c7b8ccbf3d4376c0187424ed81',
+    ),
+    'doctrine/dbal' => 
+    array (
+      'pretty_version' => '3.1.0',
+      'version' => '3.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5ba62e7e40df119424866064faf2cef66cb5232a',
+    ),
+    'doctrine/deprecations' => 
+    array (
+      'pretty_version' => 'v0.5.3',
+      'version' => '0.5.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9504165960a1f83cc1480e2be1dd0a0478561314',
+    ),
+    'doctrine/event-manager' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '41370af6a30faa9dc0368c4a6814d596e81aba7f',
     ),
     'doctrine/inflector' => 
     array (
@@ -460,7 +505,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'cfb30c82585a0a5b19f1ee3d898aab36e188f046',
+      'reference' => '35b2c9e625780f558a870603cf4d01ac41eb23e6',
     ),
     'laravel/sail' => 
     array (
@@ -580,6 +625,13 @@ private static $installed = array (
       array (
       ),
       'reference' => '41b7e9999133d5082700d31a1d0977161df8322a',
+    ),
+    'ocramius/package-versions' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '1.11.99',
+      ),
     ),
     'opis/closure' => 
     array (
