@@ -13,7 +13,7 @@
             <h5 class="card-title">Platformy: {{ $game[0]->platform }}</h5>
             <h5 class="card-title">Data wydania: {{ $game[0]->publicate_date }}</h5>
             <p class="card-text">Opis: {{ $game[0]->description }}</p>
-            <a href="{{ route('games.list') }}" class="card-link">Powrót</a>
+            <a href="{{ route('games.list') }}" class="btn btn-dark">Powrót</a>
         </div>
     </div>
 @endsection

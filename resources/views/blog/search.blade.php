@@ -29,13 +29,10 @@
                         <div class="card-body">
                             <h4 class="card-title">Nr: {{ $loop->iteration }}.</h4>
                             <h2 class="card-title">Tytuł: {{ $game->title }}</h2>
-                            <h5 class="card-title">Gatunek: {{ $game->genre }}</h5>
-                            <h5 class="card-title">Wydawca: {{ $game->publisher }}</h5>
                             <h5 class="card-title">Platformy: {{ $game->platform }}</h5>
                             <h5 class="card-title">Data wydania: {{ $game->publicate_date }}</h5>
-                            <p class="card-text">Opis: {{ $game->description }}</p>
-                            <a href="{{ route('game.add.form', $game->id) }}" class="card-link">Edytuj</a>
-                            <a href="{{ route('game.show', $game->id) }}" class="card-link">Zobacz</a>
+                            <a href="{{ route('game.edit.form', $game->id) }}" class="btn btn-dark">Edytuj</a>
+                            <a href="{{ route('game.show', $game->id) }}" class="btn btn-info">Zobacz</a>
                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal{{ $game->id }}">
                                 Usuń 
                               </button>
