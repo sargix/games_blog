@@ -25,8 +25,8 @@ class MainController extends Controller
     {
         $createdGame = [
             'title' => $request->input('title'),
-            'genre' => $request->input('genre'),
-            'publisher' => $request->input('publisher'),
+            'genre_id' => $request->input('genre'),
+            'publisher_id' => $request->input('publisher'),
             'publicate_date' => $request->input('date'),
             'platform' => $request->input('ps3') . ' ' .
                 $request->input('ps4') . ' ' .
@@ -47,8 +47,12 @@ class MainController extends Controller
 
     public function show(int $gameId)
     {
-        $game = DB::table('games')->where('id', $gameId)->get();
-
+        $game = DB::table('games')
+            ->join('genres', 'games.genre_id', '=', 'genres.id')
+            ->join('publishers', 'games.publisher_id', '=', 'publishers.id')
+            ->select('games.id', 'games.title', 'genres.name as genre_name', 'publishers.name as publisher_name', 'games.platform', 'games.publicate_date', 'games.description')
+            ->where('games.id', $gameId)
+            ->get();
         return view('blog.show', ['game' => $game]);
     }
 

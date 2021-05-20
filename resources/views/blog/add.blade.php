@@ -11,8 +11,11 @@
     </div>
     <div class="form-group">
         <label for="genre">Gatunek gry:</label>
-        <input type="text" class="form-control" placeholder="Wpisz gatunek" name="genre">
-    </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="genre" value="1"> RPG
+          </label>
+      </div>    </div>
     <div class="form-group">
         <label for="publisher">Wydawca gry:</label>
         <input type="text" class="form-control" placeholder="Wpisz wydawcę" name="publisher">

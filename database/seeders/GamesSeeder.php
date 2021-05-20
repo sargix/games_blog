@@ -24,8 +24,8 @@ class GamesSeeder extends Seeder
             $games[] = [
                 'title' => 'Resident Evil 8',
                 'description' => 'Resident Evil Village is a survival horror game developed and published  by Capcom.',
-                'genre' => 'Survival horror',
-                'publisher' => 'Capcom',
+                'genre_id' => 4,
+                'publisher_id' => 4,
                 'platform' => 'PC, PS4, XONE',
                 'publicate_date' => Carbon::now(),
             ];
