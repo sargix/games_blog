@@ -53,6 +53,7 @@ class MainController extends Controller
             ->select('games.id', 'games.title', 'genres.name as genre_name', 'publishers.name as publisher_name', 'games.platform', 'games.publicate_date', 'games.description')
             ->where('games.id', $gameId)
             ->get();
+
         return view('blog.show', ['game' => $game]);
     }
 
@@ -69,8 +70,8 @@ class MainController extends Controller
     {
         $editGame = [
             'title' => $request->input('title'),
-            'genre' => $request->input('genre'),
-            'publisher' => $request->input('publisher'),
+            'genre_id' => $request->input('genre'),
+            'publisher_id' => $request->input('publisher'),
             'publicate_date' => $request->input('date'),
             'platform' => $request->input('ps3') . ' ' .
                 $request->input('ps4') . ' ' .
